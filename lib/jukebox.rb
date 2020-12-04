@@ -42,5 +42,7 @@ def run
     list
   elsif command_lower == "help"
     help
+  else puts "Please enter a valid command"
+    run
   end
 end
