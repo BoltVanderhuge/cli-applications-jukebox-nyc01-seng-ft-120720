@@ -7,10 +7,10 @@ def help
 end
 
 def list(songs)
-  songs.each.with_index(1) do {|song,index|
+  songs.each.with_index(1) {|song,index|
   puts "#{index}. #{song}"
   }
-  end
+
 end
 
 def play(songs)
