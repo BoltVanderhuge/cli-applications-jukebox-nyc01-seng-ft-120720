@@ -30,7 +30,7 @@ def exit_jukebox
   puts "Goodbye"
 end
   
-def run()
+def run
   puts "Please enter a command:"
   command_upper = gets.strip
   command_lower = command_upper.downcase
