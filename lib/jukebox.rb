@@ -17,9 +17,9 @@ def play(songs)
   user_input = gets.chomp
   if user_input.to_i >1 && user_input.to_i <= songs.length 
     puts "Playing #{songs[user_input.to_i +1]}"
-    elsif songs.include?(user_input)
+  elsif songs.include?(user_input)
     puts "Playing #{songs.find{|song| song == user_input}}"
-    else puts "Invalid input, please try again"
+  else puts "Invalid input, please try again"
   end
 end
 
