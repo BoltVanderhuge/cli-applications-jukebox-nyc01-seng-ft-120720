@@ -37,9 +37,9 @@ def run
   if command_lower == "exit"
     exit_jukebox
   elsif command_lower == "play"
-    play
+    play()
   elsif command_lower == "list"
-    list
+    list()
   elsif command_lower == "help"
     help
   else puts "Please enter a valid command"
