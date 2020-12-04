@@ -30,19 +30,19 @@ def exit_jukebox
   puts "Goodbye"
 end
   
-def run
+def run(songs)
   puts "Please enter a command:"
   command_upper = gets.strip
   command_lower = command_upper.downcase
   if command_lower == "exit"
     exit_jukebox
   elsif command_lower == "play"
-    play
+    play(songs)
   elsif command_lower == "list"
-    list
+    list(songs)
   elsif command_lower == "help"
     help
   else puts "Please enter a valid command"
-    run
+    run(songs)
   end
 end
