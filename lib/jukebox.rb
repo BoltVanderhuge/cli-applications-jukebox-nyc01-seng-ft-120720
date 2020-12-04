@@ -32,7 +32,15 @@ end
   
 def run 
   puts "Please enter a command:"
-  command = gets.strip
-  command
-  if command == 
+  command_upper = gets.strip
+  command_lower = command_upper.downcase
+  if command_lower == "exit"
+    exit_jukebox
+  elsif command_lower == "play"
+    play
+  elsif command_lower == "list"
+    list
+  elsif command_lower == "help"
+    help
+  end
 end
